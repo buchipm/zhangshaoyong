@@ -1,0 +1,86 @@
+<!--注册界面的html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <link rel="stylesheet" type="text/css" href="logininterface.css">
+</head>
+<body>
+<h1 class="center">注册界面</h1>
+
+<form action="xxx" method="get">
+    <table class="tablecenter "
+    <!--姓名-->
+    <tr>
+        <td>姓名:</td>
+        <td><input type="text" value="请输入你的姓名" class="center" id="name"  name="user"></td>
+        <td id="namewarn" class="warn"></td>
+    </tr>
+
+    <!--性别-->
+    <tr>
+        <td>性别:</td>
+        <td><input type="radio" name="gender" value="female" id="female">Female<input type="radio" name="gender" value="male" id="male">Male</td>
+        <td id="genderwarn" class="warn"></td>
+    </tr>
+
+    <!--邮箱-->
+    <tr>
+        <td>邮箱:</td>
+        <td><input type="text" value="请输入你的邮箱" class="center"  id="email" name="email"></td>
+        <td id="emailwarn" class="warn"></td>
+    </tr>
+
+    <!--手机号码-->
+    <tr>
+        <td>手机号:</td>
+        <td><input type="text" value="请输入你的手机号" class="center" id="phone" name="phone"></td>
+        <td id="phonewarn" class="warn"></td>
+    </tr>
+
+    <!--地址-->
+    <tr>
+        <td>地址:</td>
+        <td>
+            <select id="province">
+                <option>-请选择省-</option>
+            </select>
+            <label>省</lable>
+                <select id="city">
+                    <option>-请选择市-</option>
+                </select>
+                <label>市</lable>
+        </td>
+        <td id="addresswarn" class="warn"></td>
+    </tr>
+
+    <!--密码-->
+    <tr>
+        <td>密码:</td>
+        <td><input type="text" value="请输入你的密码" class="center" id="password" name="password"></td>
+        <td id="passwordwarn" class="warn"></td>
+    </tr>
+
+    <!--再次确认密码-->
+    <tr>
+        <td>确认密码:</td>
+        <td><input type="text" value="请确认你的密码" class="center" id="password2"></td>
+        <td id="password2warn" class="warn"></td>
+    </tr>
+
+    <!--按钮-->
+    <tr>
+        <td><input type="reset" value="清除重置" id="reset"></td>
+        <td><input type="button" value="注册" id="submit"></td>
+        <td><input type="button" value="other"></td>
+    </tr>
+
+    </table>
+</form>
+
+<script type="text/javascript" src="logininterface.js"></script>  <!--原版DOM-->
+<!--<script src="jquery-3.3.1.min.js"></script>-->    <!--jQuery版（jQuery官网下载）-->
+<!--<script type="text/javascript" src="logininterface2.js"></script>-->    <!--jQuery版-->
+</body>
+</html>
